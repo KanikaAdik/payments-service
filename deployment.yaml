@@ -74,7 +74,7 @@ spec:
     spec:
       containers:
       - name: payments
-        image: payments-service:0.0.1
+        image: payments-service:v1
         imagePullPolicy: Never
         env:
         - name: DB_HOST
