@@ -45,6 +45,7 @@ metadata:
   labels:
     app: payments
     service: payments
+    version: v1
 spec:
   ports:
   - port: 5000
