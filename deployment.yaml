@@ -41,7 +41,7 @@ spec:
 apiVersion: v2
 kind: Service
 metadata:
-  name: payments-service 
+  name: payments-service
   labels:
     app: payments
     service: payments
@@ -56,7 +56,7 @@ spec:
 apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: payments 
+  name: payments-v2 
   labels:
     app: payments
     version: v2
@@ -74,7 +74,7 @@ spec:
     spec:
       containers:
       - name: payments
-        image: payments-service:0.0.1
+        image: payments-service:v2
         imagePullPolicy: Never
         env:
         - name: DB_HOST
